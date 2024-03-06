@@ -732,6 +732,18 @@ video {
   height: 100%;
 }
 
+.min-h-52 {
+  min-height: 13rem;
+}
+
+.min-h-60 {
+  min-height: 15rem;
+}
+
+.min-h-64 {
+  min-height: 16rem;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -804,6 +816,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -864,6 +880,10 @@ video {
   overflow: hidden;
 }
 
+.text-wrap {
+  text-wrap: wrap;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -906,6 +926,11 @@ video {
   border-color: transparent;
 }
 
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
@@ -914,11 +939,6 @@ video {
 .bg-red-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -1064,6 +1084,11 @@ video {
   line-height: 1rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1108,6 +1133,26 @@ video {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+/* change from class selector(.) to id selector(#) to see the changes */
+
+.profile-pic-square , .profile-pic{
+  background-image: url(./images/dotted-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#first-background-image {
+  /* background-image: ; */
+  background-image: linear-gradient(to bottom,rgb(0 0 255 / 50%),rgba(174, 230, 195, 0.5)), url(./images/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-top: auto;
+  padding: 0;
+  color: white;
 }
 
 .before\:mx-auto::before {
@@ -1164,6 +1209,11 @@ video {
 .hover\:text-red-400:hover {
   --tw-text-opacity: 1;
   color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+
+.hover\:text-gray-100:hover {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
 .hover\:ring:hover {
@@ -1564,4 +1614,4 @@ video {
     background-color: rgb(248 113 113 / var(--tw-bg-opacity));
   }
 }
-
+  

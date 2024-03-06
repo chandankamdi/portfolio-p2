@@ -2,3 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* change from class selector(.) to id selector(#) to see the changes */
+.profile-pic-square , .profile-pic{
+    background-image: url(./images/dotted-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#first-background-image {
+    /* background-image: ; */
+    background-image: linear-gradient(to bottom,rgb(0 0 255 / 50%),rgba(174, 230, 195, 0.5)), url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: auto;
+    padding: 0;
+    color: white;
+  }
+  
